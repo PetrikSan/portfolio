@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Project 2 - Game design project by Petrik Sandberg">
     <title>Project Title 2 - Petrik Sandberg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <script src="../video-autoplay.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -24,17 +28,11 @@
             <!-- Back Link -->
             <a href="../index.html" class="back-link">Back to Portfolio</a>
 
-            <!-- Project Header -->
-            <header class="project-header">
-                <h1 class="project-title">Project Title 2</h1>
-                <p class="project-role">Game Designer / Level Designer</p>
-            </header>
-
             <!-- Project Content -->
             <div class="project-content">
                 <!-- Hero Image -->
                 <img
-                    src="../assets/project2-hero.jpg"
+                    src="../assets/project2/hero/project2-hero.jpg"
                     alt="Project 2 hero image"
                     class="project-image"
                 >
@@ -43,79 +41,47 @@
                 <section class="project-section">
                     <h2>Overview</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                    <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Ferdinand Unstoppabull was the first commercial game project I worked on from start to finish. The game was based on the animated family film Ferdinand by Blue Sky Studios. We collaborated with 20th Century Fox's games division to align on brand presentation and sync the release with the film's commercial launch—both of which we succeeded in.
+                    </p><p>
+                        As the sole designer on the project, I handled systems design, UX design, and economy design. I also programmed and animated UI elements to polish the game's look and feel.
                     </p>
                 </section>
 
-                <!-- Video Section -->
-                <section class="project-section">
-                    <h2>Gameplay Video</h2>
-                    <div class="video-container">
-                        <iframe
-                            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                            title="Project 2 gameplay video"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                        ></iframe>
-                    </div>
-                </section>
-
-                <!-- My Role Section -->
-                <section class="project-section">
-                    <h2>My Role</h2>
-                    <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                        veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                    </p>
-                </section>
-
-                <!-- Image Gallery -->
-                <div class="project-gallery project-gallery--two">
+                <!-- Overview Gallery -->
+                <div class="project-gallery">
                     <img
-                        src="../assets/project2-detail1.jpg"
-                        alt="Project 2 detail screenshot 1"
+                        src="../assets/project2/overview/project2-shot1.webp"
+                        alt="Project 2 screenshot 1"
                         class="project-image"
                     >
                     <img
-                        src="../assets/project2-detail2.jpg"
-                        alt="Project 2 detail screenshot 2"
+                        src="../assets/project2/overview/project2-shot2.jpeg"
+                        alt="Project 2 screenshot 2"
+                        class="project-image"
+                    >
+                    <img
+                        src="../assets/project2/overview/project2-shot3.jpg"
+                        alt="Project 2 screenshot 3"
                         class="project-image"
                     >
                 </div>
 
-                <!-- Level Design Section -->
+                <!-- Project Details Section -->
                 <section class="project-section">
-                    <h2>Level Design</h2>
-                    <p>
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-                    </p>
-                </section>
-
-                <!-- Full Width Image -->
-                <img
-                    src="../assets/project2-full.jpg"
-                    alt="Project 2 full width screenshot"
-                    class="project-image"
-                >
-
-                <!-- Learnings Section -->
-                <section class="project-section">
-                    <h2>Key Learnings</h2>
-                    <p>
-                        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-                        laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
-                        reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.
-                    </p>
+                    <h2>New Game - Ferdinand Unstoppabull</h2>
+                    <div class="video-with-description">
+                        <div class="video-container video-container--half">
+                            <video controls muted loop class="project-video">
+                                <source src="../assets/project2/clip/project2-clip.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p class="project-video-description project-video-description--side">
+                            The game uniquely blended match-3 gameplay with idle and incremental mechanics, systems, and economy. The presentation revolved around a scene from the Ferdinand movie where bulls compete against horses in a dance-off. In the game, the kind-hearted Ferdinand wants to spread the joy of dancing to everyone.
+                            <br><br>
+                            Looking back after 10 years, I believe the game would have benefited from tighter, simpler design. I'm also not sure if this genre mix could work as a commercially viable free-to-play product. Still, I'm very proud of what we accomplished on a tight schedule with such a junior team, and I learned a lot about all aspects of developing a game from start to finish.
+                        </p>
+                    </div>
                 </section>
             </div>
         </article>
@@ -123,17 +89,18 @@
         <!-- Portfolio Link Section -->
         <section class="section-link">
             <div class="container content-narrow">
-                <p class="section-link__header">View more work</p>
-                <a href="../index.html" class="section-link__title">Portfolio</a>
+                <div class="section-link__row">
+                    <div class="section-link__item">
+                        <p class="section-link__header">View</p>
+                        <a href="../index.html" class="section-link__title">Portfolio</a>
+                    </div>
+                    <div class="section-link__item">
+                        <p class="section-link__header">More</p>
+                        <a href="../about.html" class="section-link__title">About Me</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer__text">&copy; 2024 Petrik Sandberg. All rights reserved.</p>
-        </div>
-    </footer>
 </body>
 </html>

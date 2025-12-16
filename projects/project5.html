@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Project 5 - Game design project by Petrik Sandberg">
     <title>Project Title 5 - Petrik Sandberg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <script src="../video-autoplay.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -24,17 +28,11 @@
             <!-- Back Link -->
             <a href="../index.html" class="back-link">Back to Portfolio</a>
 
-            <!-- Project Header -->
-            <header class="project-header">
-                <h1 class="project-title">Project Title 5</h1>
-                <p class="project-role">Lead Designer / Economy Designer</p>
-            </header>
-
             <!-- Project Content -->
             <div class="project-content">
                 <!-- Hero Image -->
                 <img
-                    src="../assets/project5-hero.jpg"
+                    src="../assets/project5/hero/project5-hero.png"
                     alt="Project 5 hero image"
                     class="project-image"
                 >
@@ -43,101 +41,56 @@
                 <section class="project-section">
                     <h2>Overview</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        I joined Kuuhubb as the second member of a new game development team. I conducted market analysis and pitched game concepts to management. We decided to pursue a match-3 game with meta progression built around interactive stories.
                     </p>
                     <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        As Team Lead and Lead Game Designer, I built a team of roughly ten people. We developed and released the game, then made significant retention improvements through post-launch updates based on live data.
+                    </p>
+                    <p>
+                        I designed all the game's systems and core loop, collaborated closely on UX and story creation, and programmed the dynamic difficulty system for the match-3 levels.                    
                     </p>
                 </section>
 
-                <!-- Video Section -->
-                <section class="project-section">
-                    <h2>Developer Diary</h2>
-                    <div class="video-container">
-                        <iframe
-                            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                            title="Project 5 developer diary"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                        ></iframe>
-                    </div>
-                </section>
-
-                <!-- Economy Design Section -->
-                <section class="project-section">
-                    <h2>Economy Design</h2>
-                    <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                        veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                    </p>
-                    <p>
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                        praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias.
-                    </p>
-                </section>
-
-                <!-- Single Image -->
-                <img
-                    src="../assets/project5-detail1.jpg"
-                    alt="Project 5 economy system visualization"
-                    class="project-image"
-                >
-                <p class="project-image-caption">Economy flow visualization</p>
-
-                <!-- Progression System Section -->
-                <section class="project-section">
-                    <h2>Progression Systems</h2>
-                    <p>
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-                    </p>
-                </section>
-
-                <!-- Image Gallery -->
-                <div class="project-gallery project-gallery--two">
+                <!-- Overview Gallery -->
+                <div class="project-gallery">
                     <img
-                        src="../assets/project5-detail2.jpg"
-                        alt="Project 5 UI mockup 1"
+                        src="../assets/project5/overview/project5-shot1.webp"
+                        alt="Project 5 screenshot 1"
                         class="project-image"
                     >
                     <img
-                        src="../assets/project5-detail3.jpg"
-                        alt="Project 5 UI mockup 2"
+                        src="../assets/project5/overview/project5-shot2.webp"
+                        alt="Project 5 screenshot 2"
                         class="project-image"
                     >
                 </div>
 
-                <!-- Data & Analytics Section -->
+                <!-- Project Details Section -->
                 <section class="project-section">
-                    <h2>Data-Driven Iteration</h2>
-                    <p>
-                        Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
-                        ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
-                        quis nostrum exercitationem ullam corporis suscipit laboriosam.
-                    </p>
-                </section>
+                    <h2>New Game - Tiles & Tales</h2>
+                    <div class="video-with-description">
+                        <div class="video-container video-container--half">
+                            <video controls muted loop class="project-video">
+                                <source src="../assets/project5/clips/project5-clip1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p class="project-video-description project-video-description--side">
+                            After the first launch, we noticed players were dropping off during story sections. We decided to revamp the stories to be snappier and include just one choice per sequence—but that choice should always feel meaningful from the player's perspective. That story update—which also added a simple new progression layer—nearly doubled our retention.
+                        </p>
+                    </div>
 
-                <!-- Full Width Image -->
-                <img
-                    src="../assets/project5-full.jpg"
-                    alt="Project 5 final game screenshot"
-                    class="project-image"
-                >
-
-                <!-- Results Section -->
-                <section class="project-section">
-                    <h2>Results</h2>
-                    <p>
-                        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-                        nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
-                        nulla pariatur excepturi sint occaecat cupidatat non proident.
-                    </p>
+                    <div class="video-with-description">
+                        <div class="video-container video-container--half">
+                            <video controls muted loop class="project-video">
+                                <source src="../assets/project5/clips/project5-clip2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p class="project-video-description project-video-description--side">
+                            Ultimately, the slow production speed of story content became a major bottleneck for expanding the game. This taught me a valuable lesson for future projects—especially games designed for years of updates. In today's market, it's crucial to be strategic about what content you provide and how you deliver it. This allows you to manage live games more efficiently.
+                        </p>
+                    </div>
                 </section>
             </div>
         </article>
@@ -145,17 +98,18 @@
         <!-- Portfolio Link Section -->
         <section class="section-link">
             <div class="container content-narrow">
-                <p class="section-link__header">View more work</p>
-                <a href="../index.html" class="section-link__title">Portfolio</a>
+                <div class="section-link__row">
+                    <div class="section-link__item">
+                        <p class="section-link__header">View</p>
+                        <a href="../index.html" class="section-link__title">Portfolio</a>
+                    </div>
+                    <div class="section-link__item">
+                        <p class="section-link__header">More</p>
+                        <a href="../about.html" class="section-link__title">About Me</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer__text">&copy; 2024 Petrik Sandberg. All rights reserved.</p>
-        </div>
-    </footer>
 </body>
 </html>

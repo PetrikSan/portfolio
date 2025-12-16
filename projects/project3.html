@@ -5,7 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Project 3 - Game design project by Petrik Sandberg">
     <title>Project Title 3 - Petrik Sandberg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <script src="../video-autoplay.js"></script>
+    <style>
+        /* Triple spacing between sections for Project 3 */
+        .project-section {
+            margin-top: 9rem; /* Triple of var(--spacing-xl) which is 3rem */
+        }
+
+        /* Remove top margin from Overview section (first section after hero) */
+        .project-content > .project-section:first-of-type {
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -24,17 +39,11 @@
             <!-- Back Link -->
             <a href="../index.html" class="back-link">Back to Portfolio</a>
 
-            <!-- Project Header -->
-            <header class="project-header">
-                <h1 class="project-title">Project Title 3</h1>
-                <p class="project-role">Systems Designer / Combat Designer</p>
-            </header>
-
             <!-- Project Content -->
             <div class="project-content">
                 <!-- Hero Image -->
                 <img
-                    src="../assets/project3-hero.jpg"
+                    src="../assets/project3/hero/project3-hero.webp"
                     alt="Project 3 hero image"
                     class="project-image"
                 >
@@ -43,84 +52,195 @@
                 <section class="project-section">
                     <h2>Overview</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                    <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        In Merge Mansion, I started by working on a few content updates and designing a season pass feature. Over the two years I spent on the project, I worked on systems design, economy design, UX, and user research.
+                      
+                    </p><p>
+                    To date, the projects listed on this page have generated tens of millions of dollars in revenue.
                     </p>
                 </section>
 
-                <!-- Video Section -->
-                <section class="project-section">
-                    <h2>Combat Showcase</h2>
-                    <div class="video-container">
-                        <iframe
-                            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                            title="Project 3 combat showcase"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                        ></iframe>
-                    </div>
-                </section>
-
-                <!-- Combat Design Section -->
-                <section class="project-section">
-                    <h2>Combat Design</h2>
-                    <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                        veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                    </p>
-                </section>
-
-                <!-- Single Image -->
-                <img
-                    src="../assets/project3-detail1.jpg"
-                    alt="Project 3 combat system diagram"
-                    class="project-image"
-                >
-                <p class="project-image-caption">Combat flow diagram</p>
-
-                <!-- Balancing Section -->
-                <section class="project-section">
-                    <h2>Balancing & Iteration</h2>
-                    <p>
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                        sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-                    </p>
-                    <p>
-                        Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
-                        ut labore et dolore magnam aliquam quaerat voluptatem.
-                    </p>
-                </section>
-
-                <!-- Image Gallery -->
-                <div class="project-gallery project-gallery--two">
+                <!-- Overview Gallery -->
+                <div class="project-gallery">
                     <img
-                        src="../assets/project3-detail2.jpg"
-                        alt="Project 3 detail screenshot 1"
+                        src="../assets/project3/overview/project3-shot13.webp"
+                        alt="Project 3 screenshot 13"
                         class="project-image"
                     >
                     <img
-                        src="../assets/project3-detail3.jpg"
-                        alt="Project 3 detail screenshot 2"
+                        src="../assets/project3/overview/project3-shot14.webp"
+                        alt="Project 3 screenshot 14"
                         class="project-image"
                     >
                 </div>
 
-                <!-- Results Section -->
+                <!-- New Game - Merge Plaza Section -->
                 <section class="project-section">
-                    <h2>Impact</h2>
+                    <h2>New Games - Merge Plaza & Havisham Park</h2>
+
+                    <!-- New Game Gallery -->
+                    <div class="project-gallery">
+                        <img
+                            src="../assets/project3/newgame/project3-shot10.webp"
+                            alt="Merge Plaza screenshot 10"
+                            class="project-image"
+                        >
+                        <img
+                            src="../assets/project3/newgame/project3-shot11.jpg"
+                            alt="Merge Plaza screenshot 11"
+                            class="project-image"
+                        >
+                        <img
+                            src="../assets/project3/newgame/project3-shot12.webp"
+                            alt="Merge Plaza screenshot 12"
+                            class="project-image"
+                        >
+                    </div>
+
                     <p>
-                        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-                        laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
-                        reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.
+                        At the end of my time at Metacore, I worked on the New Games team for about a year. We built the first game with a very small development team. I was the only game designer, handling all systems design and economy design. The artist and I collaborated closely on UX design.
+                    </p><p>
+                        When the first project didn't meet our goals, we formed a larger team and shifted to a story-focused game. This new direction achieved much better retention and met our initial goals. On this larger second project, I worked on various system designs and economy design.
                     </p>
+                </section>
+
+                <!-- Merge Plaza Video 1 -->
+                <div class="video-with-description">
+                    <div class="video-container video-container--half">
+                        <video controls muted loop class="project-video">
+                            <source src="../assets/project3/newgame/project3-clip2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p class="project-video-description project-video-description--side">
+                        On the Merge Plaza project, we focused on simple and casual core merge gameplay that's easy to jump into. Our intense focus on simplicity created many challenges, which we got to solve in cool ways. We conducted extensive user testing to refine the game's UX and systems through an iterative process.
+                    </p>
+                </div>
+
+                <!-- Merge Plaza Video 2 -->
+                <div class="video-with-description">
+                    <div class="video-container video-container--half">
+                        <video controls muted loop class="project-video">
+                            <source src="../assets/project3/newgame/project3-clip3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p class="project-video-description project-video-description--side">
+                        Our goal was to create a game flow with highs and lows of varying intensity. To achieve this, we built a system that dynamically increased item production based on the player's available energy.
+                    </p>
+                </div>
+
+                <!-- Merge Plaza Video 3 -->
+                <div class="video-with-description">
+                    <div class="video-container video-container--half">
+                        <video controls muted loop class="project-video">
+                            <source src="../assets/project3/newgame/project3-clip4.mov" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p class="project-video-description project-video-description--side">
+                        I worked on the merge board systems for the project that became Havisham Park, focusing primarily on the initial versions of the game's task system.
+                    </p>
+                </div>
+
+                <!-- Award-winning Secret Supply event Section -->
+                <section class="project-section">
+                    <h2>Live-Ops - Secret Supply Mini Game</h2>
+                    <div class="section-two-column">
+                        <a href="https://info.liftoff.ai/2025-mobile-appdev-awards?__hstc=53366263.e91b9f302eef0c4cad439756a422473e.1765201405900.1765201405900.1765201405900.1&__hssc=53366263.1.1765201405900&__hsfp=1985237623" class="image-link" aria-label="Open Secret Supply event link">
+                            <img
+                                src="../assets/project3/feature1/project3-shot8.jpeg"
+                                alt="Secret Supply event screenshot 8"
+                                class="project-image"
+                            >
+                        </a>
+                        <div class="video-container video-container--half">
+                            <video controls muted loop class="project-video">
+                                <source src="../assets/project3/feature1/project3-clip1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <p>
+                        Award-winning Secret Supply is a mini-game system in Merge Mansion that activates for a limited time on a regular basis.
+                        Players engage with a fun, physics-based, casino-like machine that spits out random items that automatically merge inside.
+                        Our goal was to create a short dopamine loop—one more try after another.
+                    </p>
+                    <p>
+                        I led the design, focusing primarily on systems while collaborating with product management, economy designers, and UX designers in their respective areas.
+                        The project was extremely innovative and, because of that, extremely challenging and intense.
+                        I’m really glad for the recognition it received.
+                    </p>
+
+                    <img
+                        src="../assets/project3/feature1/project3-shot9.png"
+                        alt="Secret Supply event screenshot 9"
+                        class="project-image"
+                    >
+                </section>
+
+                <!-- Lucky Catch event Section -->
+                <section class="project-section">
+                    <h2>Live-Ops - Lucky Catch Mini Game</h2>
+                    <img
+                        src="../assets/project3/feature2/project3-shot5.png"
+                        alt="Lucky Catch event screenshot 5"
+                        class="project-image project-image--half"
+                    >
+                    <p>
+                        Lucky Catch is one of the best-performing features I designed for Merge Mansion. It has since been copied by many other games, likely because of its success. The feature is a limited-time mini-game where players build fishing rods on a merge board and use them to catch fish of varying types and rarities. Players fill their fish collection through this catch-and-release loop.
+                    </p>
+                    <p>
+                        The simple mechanics combined with random outcomes proved highly engaging. This design heavily inspired Secret Supply from that perspective. I was the sole designer on this feature, handling systems design and economy design, and collaborating on UX and product decisions.
+                    </p>
+                    <img
+                        src="../assets/project3/feature2/project3-shot6.png"
+                        alt="Lucky Catch event screenshot 6"
+                        class="project-image"
+                    >
+                </section>
+
+                <!-- The Great Bake-Off event Section -->
+                <section class="project-section">
+                    <h2>Live-Ops - The Great Bake-Off Mini Game</h2>
+                    <img
+                        src="../assets/project3/feature3/project3-shot3.png"
+                        alt="The Great Bake-Off event screenshot 3"
+                        class="project-image project-image--half"
+                    >
+                    <p>
+                        The Great Bake-Off was the first competitive feature we introduced to Merge Mansion. Based on our user research, I designed it to appeal to both competitive and non-competitive players. During the event, players engaged with a limited-time merge board featuring a simple loop: spawn eggs with chickens, merge them into cakes, earn competition points, and progress through non-competitive reward tracks. This feature also introduced a secondary energy system to the game for the first time, allowing players to engage with side content without spending their valuable main energy.
+                    </p>
+                    <p>
+                        Players loved the feature for its simplicity and because they could play without spending their precious main energy. However, the first versions of the secondary energy provided too much extra play time. The simple gameplay loop, the secondary energy system, and its challenges all greatly inspired the Lucky Catch mini-game I later designed. I designed the entire feature, focusing primarily on systems design and economy design, while collaborating on the UX.
+                    </p>
+                    <img
+                        src="../assets/project3/feature3/project3-shot4.png"
+                        alt="The Great Bake-Off event screenshot 4"
+                        class="project-image"
+                    >
+                </section>
+
+                <!-- Easter Egg Hunt event Section -->
+                <section class="project-section">
+                    <h2>Live-Ops - Easter Egg Hunt Mini Game</h2>
+
+                    <img
+                        src="../assets/project3/feature4/project3-shot1.png"
+                        alt="Easter Egg Hunt event screenshot 1"
+                        class="project-image project-image--half"
+                    >
+                    <p>
+                        The Easter Egg Hunt was the first limited-time mini-game feature in Merge Mansion where we simplified the progression loop from "doing tasks" to simply finding and collecting Easter egg items on the merge board. I also led an initiative to tell the story visually through item designs by collaborating with the story team, which received positive recognition by the fans.
+                    </p>
+                    <p>
+                        Many players loved the more streamlined experience, but playtests revealed that the board's item economy was quite complex. This complexity strongly inspired the Great Bake-Off feature I worked on next. I designed this entire feature, focusing on systems design and economy design while collaborating on UX and product management.
+                    </p>
+
+                    <img
+                        src="../assets/project3/feature4/project3-shot2.png"
+                        alt="Easter Egg Hunt event screenshot 2"
+                        class="project-image"
+                    >
                 </section>
             </div>
         </article>
@@ -128,17 +248,18 @@
         <!-- Portfolio Link Section -->
         <section class="section-link">
             <div class="container content-narrow">
-                <p class="section-link__header">View more work</p>
-                <a href="../index.html" class="section-link__title">Portfolio</a>
+                <div class="section-link__row">
+                    <div class="section-link__item">
+                        <p class="section-link__header">View</p>
+                        <a href="../index.html" class="section-link__title">Portfolio</a>
+                    </div>
+                    <div class="section-link__item">
+                        <p class="section-link__header">More</p>
+                        <a href="../about.html" class="section-link__title">About Me</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer__text">&copy; 2024 Petrik Sandberg. All rights reserved.</p>
-        </div>
-    </footer>
 </body>
 </html>
