@@ -723,6 +723,25 @@ img {
     margin-bottom: 0;
 }
 
+@media (max-width: 767px) {
+    .video-with-description {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .video-container--half {
+        width: 100%;
+        max-width: none;
+        padding-bottom: 56.25%; /* return to 16:9 on mobile */
+        margin: 0 auto var(--spacing-md);
+    }
+
+    .project-video-description--side {
+        flex: none;
+        margin-bottom: var(--spacing-xl);
+    }
+}
+
 /* --------------------------------------------------------------------------
    Back Navigation (for project pages)
    -------------------------------------------------------------------------- */
