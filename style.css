@@ -732,7 +732,7 @@ img {
     .video-container--half {
         width: 100%;
         max-width: none;
-        padding-bottom: 56.25%; /* return to 16:9 on mobile */
+        padding-bottom: 168.75%; /* taller portrait-friendly height (3x 16:9) on mobile */
         margin: 0 auto var(--spacing-md);
     }
 
